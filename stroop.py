@@ -20,12 +20,12 @@ pl.hist(h,normed=True)      #use this to draw histogram of your data
 
 pl.show()                   #use may also need add this 
 
-y = df['Congruent']
-x = df['Incongruent']
+x = df['Congruent']
+y = df['Incongruent']
 
 bins = np.linspace(0, 40, 50)
 pl.hold(True)
-pl.hist(x, bins, alpha=0.5, label='x')
-pl.hist(y, bins, alpha=0.5, label='y')
+pl.hist(x, bins, alpha=0.5, label='Congruent')
+pl.hist(y, bins, alpha=0.5, label='Incongruent')
 pl.legend(loc='upper right')
 pl.show()
